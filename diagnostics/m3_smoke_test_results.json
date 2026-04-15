@@ -1,0 +1,131 @@
+{
+  "test": "smoke_test_10_series",
+  "engine": "Foresight Engine v3.0.0",
+  "horizon": 18,
+  "tier": "essentials",
+  "n_series": 10,
+  "n_errors": 0,
+  "median_mase": 0.56193,
+  "mean_mase": 0.6054348999999999,
+  "sha256": "2e23f70879730648ead68f86e1c19b607383d311a8d38857c0eb36e482816228",
+  "elapsed_s": 550.4,
+  "series": [
+    {
+      "sn": "N1402",
+      "bucket": "short_48-59",
+      "domain": "monthly",
+      "n_obs": 50,
+      "winner": "Primary Ensemble",
+      "mase": 0.56404,
+      "mase_raw": 0.56404,
+      "smape": 62.287239,
+      "elapsed_s": 7.5
+    },
+    {
+      "sn": "N1403",
+      "bucket": "short_48-59",
+      "domain": "monthly",
+      "n_obs": 50,
+      "winner": "Primary Ensemble",
+      "mase": 0.205197,
+      "mase_raw": 0.205197,
+      "smape": 28.627591,
+      "elapsed_s": 9.1
+    },
+    {
+      "sn": "N2011",
+      "bucket": "medium_60-79",
+      "domain": "monthly",
+      "n_obs": 78,
+      "winner": "Primary Ensemble",
+      "mase": 0.54019,
+      "mase_raw": 0.54019,
+      "smape": 6.668508,
+      "elapsed_s": 29.2
+    },
+    {
+      "sn": "N2437",
+      "bucket": "medium_60-79",
+      "domain": "monthly",
+      "n_obs": 68,
+      "winner": "Primary Ensemble",
+      "mase": 0.783562,
+      "mase_raw": 0.783562,
+      "smape": 2.562495,
+      "elapsed_s": 36.9
+    },
+    {
+      "sn": "N2215",
+      "bucket": "long_80-99",
+      "domain": "monthly",
+      "n_obs": 80,
+      "winner": "Primary Ensemble",
+      "mase": 1.248241,
+      "mase_raw": 1.248241,
+      "smape": 23.294545,
+      "elapsed_s": 53.9
+    },
+    {
+      "sn": "N2216",
+      "bucket": "long_80-99",
+      "domain": "monthly",
+      "n_obs": 80,
+      "winner": "Primary Ensemble",
+      "mase": 0.659505,
+      "mase_raw": 0.659505,
+      "smape": 2.902591,
+      "elapsed_s": 23.0
+    },
+    {
+      "sn": "N1679",
+      "bucket": "extended_100-119",
+      "domain": "monthly",
+      "n_obs": 108,
+      "winner": "Primary Ensemble",
+      "mase": 0.506577,
+      "mase_raw": 0.506577,
+      "smape": 28.261164,
+      "elapsed_s": 78.7
+    },
+    {
+      "sn": "N1680",
+      "bucket": "extended_100-119",
+      "domain": "monthly",
+      "n_obs": 108,
+      "winner": "Primary Ensemble",
+      "mase": 0.358064,
+      "mase_raw": 0.358064,
+      "smape": 26.332256,
+      "elapsed_s": 139.2
+    },
+    {
+      "sn": "N1876",
+      "bucket": "full_120plus",
+      "domain": "monthly",
+      "n_obs": 123,
+      "winner": "Primary Ensemble",
+      "mase": 0.629153,
+      "mase_raw": 0.629153,
+      "smape": 2.066147,
+      "elapsed_s": 77.1
+    },
+    {
+      "sn": "N1877",
+      "bucket": "full_120plus",
+      "domain": "monthly",
+      "n_obs": 123,
+      "winner": "Primary Ensemble",
+      "mase": 0.55982,
+      "mase_raw": 0.55982,
+      "smape": 2.158194,
+      "elapsed_s": 96.0
+    }
+  ],
+  "errors": [],
+  "validation": [],
+  "methodology": {
+    "mase": "Hyndman & Koehler (2006), IJF 22(4):679-688",
+    "smape": "Makridakis (1993)",
+    "dataset": "Makridakis & Hibon (2000), IJF 16(4):451-476"
+  }
+}

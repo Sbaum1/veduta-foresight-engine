@@ -1,0 +1,53 @@
+{
+  "test": "stage1_timing",
+  "engine": "Foresight Engine v3.0.0",
+  "backtest": "disabled",
+  "results": [
+    {
+      "series_id": "T1",
+      "n_train": 50,
+      "elapsed_s": 94.55,
+      "mase": 0.613003,
+      "smape": 65.8208,
+      "status": "PASS",
+      "error": null
+    },
+    {
+      "series_id": "T2",
+      "n_train": 50,
+      "elapsed_s": 25.42,
+      "mase": 0.202727,
+      "smape": 28.5992,
+      "status": "PASS",
+      "error": null
+    },
+    {
+      "series_id": "T610",
+      "n_train": 78,
+      "elapsed_s": 37.16,
+      "mase": 0.586282,
+      "smape": 7.2235,
+      "status": "PASS",
+      "error": null
+    },
+    {
+      "series_id": "T278",
+      "n_train": 108,
+      "elapsed_s": 62.53,
+      "mase": 0.537468,
+      "smape": 29.7656,
+      "status": "PASS",
+      "error": null
+    },
+    {
+      "series_id": "T279",
+      "n_train": 108,
+      "elapsed_s": 65.81,
+      "mase": 0.466198,
+      "smape": 32.8945,
+      "status": "PASS",
+      "error": null
+    }
+  ],
+  "all_passed": true
+}

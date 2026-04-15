@@ -1,0 +1,29 @@
+# =============================================================================
+# .streamlit/config.toml
+# VEDUTA Foresight X — Native Streamlit Theme
+# VEDUTA brand as first-class Streamlit configuration.
+# No CSS injection required for core colors and fonts.
+# =============================================================================
+
+[theme]
+# ── Core palette ─────────────────────────────────────────────────────────────
+base                = "dark"
+backgroundColor     = "#07080F"      # Nocturne black
+secondaryBackgroundColor = "#0D1829" # Deep midnight — inputs, modules
+primaryColor        = "#4A9EE0"      # Electric blue — primary interactive
+textColor           = "rgba(255,255,255,0.85)"
+
+# ── Typography ────────────────────────────────────────────────────────────────
+font                = "monospace"    # DM Mono loaded via CSS for full control
+
+# ── Link and code colors ──────────────────────────────────────────────────────
+linkColor           = "#C8D4E0"      # Precision silver
+codeTextColor       = "#52B8B2"      # Canal teal
+
+[server]
+# Disable file watcher in production-like mode
+runOnSave           = false
+headless            = true
+
+[browser]
+gatherUsageStats    = false

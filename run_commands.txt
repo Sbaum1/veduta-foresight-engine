@@ -1,0 +1,31 @@
+To run Foresight X:
+Place the veduta_foresight_x folder in veduta_project/ alongside forecast_engine/. The .streamlit/config.toml must be inside veduta_foresight_app/ for Streamlit to pick it up automatically.
+
+# 1. Create the venv inside the Foresight X folder
+cd C:\Dev\Repos\Veduta_Foresight_X
+python -m venv .venv
+
+# 2. Activate it
+.venv\Scripts\Activate.ps1
+
+# 3. Confirm you're in it — prompt should show (.venv)
+python --version
+
+cd C:\Dev\Repos\Veduta_Foresight_X
+streamlit run app.py
+
+pip install -r requirements.txt
+
+M3 Testing run_commands
+# Stage 1 — ~5 minutes — proves the fix works
+python test_m3_timing.py
+
+# Stage 2 — ~15 minutes — 30 stratified series
+python test_m3_pilot.py
+
+# Stage 3 — ~1.5 hours — 200 series, full length coverage
+python test_m3_extended.py
+
+# Stage 4 — ~11.5 hours — full 1,428-series official benchmark
+python test_m3_benchmark.py
+

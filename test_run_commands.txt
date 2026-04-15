@@ -1,0 +1,26 @@
+
+Step 1 — Smoke test first (3-5 min):
+cd C:\Dev\VEDUTA\core\foresight_x
+python test_smoke.py
+
+
+Step 2 — M3 benchmark (45-90 min, runs all 1,428 series):
+# Quick pilot run first — 50 series, ~3 min
+python test_m3.py --pilot
+
+# If pilot passes, run the full benchmark
+python test_m3.py
+
+The M3 dataset needs to be at C:\Dev\VEDUTA\_shared\sample_data\m3\m3_monthly_dataset.tsf. The pilot run tells us quickly if the engine is M3-ready before committing 90 minutes.
+
+Step 3 — Certification (runs after M3 completes):
+python test_certify.py
+
+This reads the M3 results, hashes all 23 engine source files, hashes every model's forecast output on a canonical series, and produces three artifacts in test_results\:
+
+certified_hashes.json — the golden hashes (commit this to the repo)
+certification_report.json — machine-readable full report
+VEDUTA_Certification_v3.txt — the human-readable certificate
+
+To verify the certificate at any time after changes:
+python test_certify.py --verify
