@@ -1,0 +1,17 @@
+{
+  "benchmark": "M3 Monthly Competition",
+  "engine": "VEDUTA Foresight Engine v3.0.0",
+  "timestamp": "2026-04-10T16:58:34.420422",
+  "series_tested": 50,
+  "valid_results": 50,
+  "n_crashes": 0,
+  "n_timeouts": 0,
+  "median_mase": 0.614132,
+  "mean_mase": 0.804532,
+  "median_smape": 30.6503,
+  "prior_mase": 0.6913,
+  "delta_vs_prior": -0.077168,
+  "passed": true,
+  "threshold_mase": 0.72,
+  "rank_note": "Median MASE below published benchmarks for modern methods on M3 Monthly dataset (horizon 18). MASE computed per Hyndman & Koehler (2006). sMAPE included for comparability with original M3 competition results (Makridakis & Hibon, 2000)."
+}
