@@ -1,4 +1,4 @@
-streamlit>=1.35.0
+﻿streamlit>=1.35.0
 pandas>=2.0.0
 numpy>=1.26.0
 scipy>=1.11.0
@@ -21,14 +21,7 @@ cmdstanpy>=1.2.0
 pystan>=3.7.0
 arch>=6.3.0
 
-# Optional — large downloads, install separately
-torch>=2.0.0
-chronos-forecasting>=1.0.0
-pyearth>=0.1.0
-
-
-
-
-
-
-pip install streamlit pandas numpy scipy scikit-learn statsmodels plotly openpyxl tbats prophet lightgbm xgboost pyarrow holidays convertdate lunarcalendar neuralprophet
+# Optional - large downloads, install separately if needed:
+# torch>=2.0.0
+# chronos-forecasting>=1.0.0
+# pyearth>=0.1.0
